@@ -111,19 +111,19 @@ jobs:
         STRIP="strip"
         case ${{ matrix.job.target }} in
           arm-unknown-linux-*) STRIP="arm-linux-gnueabihf-strip" ;;
-          aarch64-unknown-linux-gnu) STRIP="aarch64-linux-gnu-strip" ;;
-          armv7-unknown-linux) STRIP="armv7-unknown-linux-strip" ;;
-          mips-unknown-linux) STRIP="mips-unknown-linux-strip" ;;
-          mips64-unknown-linux) STRIP="mips64-unknown-linux-strip" ;;
-          mips64el-unknown-linux) STRIP="mips64el-unknown-linux-strip" ;;
-          mipsel-unknown-linux) STRIP="mipsel-unknown-linux-strip" ;;
-          powerpc-unknown-linux) STRIP="powerpc-unknown-linux-strip" ;;
-          powerpc64-unknown-linux) STRIP="powerpc64-unknown-linux-strip" ;;
-          powerpc64le-unknown-linux) STRIP="powerpc64le-unknown-linux-strip" ;;
-          riscv64gc-unknown-linux) STRIP="riscv64g-unknown-linux-strip" ;;
-          390x-unknown-linux) STRIP="390x-unknown-linux-strip" ;;
-          x86_64-unknown-freebsd) STRIP="x86_64-unknown-freebsd-strip" ;;
-          x86_64-unknown-illumos) STRIP="x86_64-unknown-illumos-strip" ;;
+          aarch64-unknown-linux-gnu) STRIP="" ;;
+          armv7-unknown-linux) STRIP="" ;;
+          mips-unknown-linux) STRIP="" ;;
+          mips64-unknown-linux) STRIP="" ;;
+          mips64el-unknown-linux) STRIP="" ;;
+          mipsel-unknown-linux) STRIP="" ;;
+          powerpc-unknown-linux) STRIP="" ;;
+          powerpc64-unknown-linux) STRIP="" ;;
+          powerpc64le-unknown-linux) STRIP="" ;;
+          riscv64gc-unknown-linux) STRIP="" ;;
+          390x-unknown-linux) STRIP="" ;;
+          x86_64-unknown-freebsd) STRIP="" ;;
+          x86_64-unknown-illumos) STRIP="" ;;
           *-pc-windows-msvc) STRIP="" ;;
         esac;
 
