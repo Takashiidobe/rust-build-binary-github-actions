@@ -19,7 +19,8 @@ jobs:
         job:
           # Tier 1
           - { target: aarch64-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
-          - { target: i686-pc-windows-gnu            , os: windows-2019                  }
+          # Need to find a way to install gcc
+          # - { target: i686-pc-windows-gnu            , os: windows-2019                  }
           - { target: i686-pc-windows-msvc           , os: windows-2019                  }
           - { target: i686-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
           - { target: x86_64-apple-darwin            , os: macos-10.15                   }
@@ -38,17 +39,48 @@ jobs:
           - { target: mips64el-unknown-linux-gnuabi64, os: ubuntu-20.04, use-cross: true }
           - { target: mipsel-unknown-linux-gnu       , os: ubuntu-20.04, use-cross: true }
           - { target: powerpc-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
-          - { target: powerpc64-unknown-linux-gnu    , os: ubuntu-20.04, use-cross: true }
+          # powerpc64 unknown linux gnu doesn't work
+          # - { target: powerpc64-unknown-linux-gnu    , os: ubuntu-20.04, use-cross: true }
           - { target: powerpc64le-unknown-linux-gnu  , os: ubuntu-20.04, use-cross: true }
           - { target: riscv64gc-unknown-linux-gnu	   , os: ubuntu-20.04, use-cross: true }
           - { target: s390x-unknown-linux-gnu	       , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-illumos         , os: ubuntu-20.04, use-cross: true }
+          # freebsd doesn't work
+          # - { target: x86_64-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
+          # illumos doesn't work.
+          # - { target: x86_64-unknown-illumos         , os: ubuntu-20.04, use-cross: true }
           - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
           - { target: i686-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
           - { target: x86_64-unknown-linux-musl      , os: ubuntu-20.04, use-cross: true }
           - { target: x86_64-unknown-netbsd          , os: ubuntu-20.04, use-cross: true }
           # Tier 2
+          - { target: aarch64-apple-ios              , os: macos-11                      }
+          - { target: aarch64-apple-ios-sim          , os: macos-11                      }
+          - { target: aarch64-fuchsia                , os: ubuntu-20.04, use-cross: true }
+          - { target: aarch64-linux-android          , os: ubuntu-20.04, use-cross: true }
+          - { target: aarch64-unknown-none-softfloat , os: ubuntu-20.04, use-cross: true }
+          - { target: aarch64-unknown-none           , os: ubuntu-20.04, use-cross: true }
+          - { target: arm-linux-androideabi          , os: ubuntu-20.04, use-cross: true }
+          - { target: arm-unknown-linux-musleabi     , os: ubuntu-20.04, use-cross: true }
+          - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
+          - { target: armebv7r-none-eabi             , os: ubuntu-20.04, use-cross: true }
+          - { target: armebv7r-none-eabihf           , os: ubuntu-20.04, use-cross: true }
+          - { target: armev5te-unknown-linux-gnueabi , os: ubuntu-20.04, use-cross: true }
+          - { target: armev5te-unknown-linux-musleabi, os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-linux-androideabi        , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-unknown-linux-gnueabi    , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-unknown-linux-musleabi   , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-unknown-linux-musleabihf , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7a-none-eabi               , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7r-none-eabi               , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7r-none-eabihf             , os: ubuntu-20.04, use-cross: true }
+
+
+          - { target: x86_64-fortanix-unknown-sgx    , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-fuchsia                 , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-linux-android           , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-pc-solaris              , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-unknown-linux-gnux32    , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-unknown-redox           , os: ubuntu-20.04, use-cross: true }
           # Tier 3
 
     steps:
