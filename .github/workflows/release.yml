@@ -48,39 +48,38 @@ jobs:
           # - { target: x86_64-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
           # illumos doesn't work.
           # - { target: x86_64-unknown-illumos         , os: ubuntu-20.04, use-cross: true }
-          - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
+          # - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
           - { target: i686-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
           - { target: x86_64-unknown-linux-musl      , os: ubuntu-20.04, use-cross: true }
           - { target: x86_64-unknown-netbsd          , os: ubuntu-20.04, use-cross: true }
           # Tier 2
-          - { target: aarch64-apple-ios              , os: macos-11                      }
-          - { target: aarch64-apple-ios-sim          , os: macos-11                      }
-          - { target: aarch64-fuchsia                , os: ubuntu-20.04, use-cross: true }
-          - { target: aarch64-linux-android          , os: ubuntu-20.04, use-cross: true }
-          - { target: aarch64-unknown-none-softfloat , os: ubuntu-20.04, use-cross: true }
-          - { target: aarch64-unknown-none           , os: ubuntu-20.04, use-cross: true }
-          - { target: arm-linux-androideabi          , os: ubuntu-20.04, use-cross: true }
-          - { target: arm-unknown-linux-musleabi     , os: ubuntu-20.04, use-cross: true }
-          - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
-          - { target: armebv7r-none-eabi             , os: ubuntu-20.04, use-cross: true }
-          - { target: armebv7r-none-eabihf           , os: ubuntu-20.04, use-cross: true }
-          - { target: armev5te-unknown-linux-gnueabi , os: ubuntu-20.04, use-cross: true }
-          - { target: armev5te-unknown-linux-musleabi, os: ubuntu-20.04, use-cross: true }
-          - { target: armv7-linux-androideabi        , os: ubuntu-20.04, use-cross: true }
-          - { target: armv7-unknown-linux-gnueabi    , os: ubuntu-20.04, use-cross: true }
-          - { target: armv7-unknown-linux-musleabi   , os: ubuntu-20.04, use-cross: true }
-          - { target: armv7-unknown-linux-musleabihf , os: ubuntu-20.04, use-cross: true }
-          - { target: armv7a-none-eabi               , os: ubuntu-20.04, use-cross: true }
-          - { target: armv7r-none-eabi               , os: ubuntu-20.04, use-cross: true }
-          - { target: armv7r-none-eabihf             , os: ubuntu-20.04, use-cross: true }
-
-
-          - { target: x86_64-fortanix-unknown-sgx    , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-fuchsia                 , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-linux-android           , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-pc-solaris              , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-linux-gnux32    , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-redox           , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-apple-ios              , os: macos-11                      }
+          # - { target: aarch64-apple-ios-sim          , os: macos-11                      }
+          # - { target: aarch64-fuchsia                , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-linux-android          , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-unknown-none-softfloat , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-unknown-none           , os: ubuntu-20.04, use-cross: true }
+          # - { target: arm-linux-androideabi          , os: ubuntu-20.04, use-cross: true }
+          # - { target: arm-unknown-linux-musleabi     , os: ubuntu-20.04, use-cross: true }
+          # - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
+          # - { target: armebv7r-none-eabi             , os: ubuntu-20.04, use-cross: true }
+          # - { target: armebv7r-none-eabihf           , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv5te-unknown-linux-gnueabi  , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv5te-unknown-linux-musleabi , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7-linux-androideabi        , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7-unknown-linux-gnueabi    , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7-unknown-linux-musleabi   , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7-unknown-linux-musleabihf , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7a-none-eabi               , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7r-none-eabi               , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7r-none-eabihf             , os: ubuntu-20.04, use-cross: true }
+          #
+          # - { target: x86_64-fortanix-unknown-sgx    , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-fuchsia                 , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-linux-android           , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-pc-solaris              , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-unknown-linux-gnux32    , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-unknown-redox           , os: ubuntu-20.04, use-cross: true }
           # Tier 3
 
     steps:
@@ -93,7 +92,6 @@ jobs:
         case ${{ matrix.job.target }} in
           arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf ;;
           aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu ;;
-          i686-pc-windows-gnu) sudo apt-get -y update ; sudo apt-get -y install i686-w64-mingw32-gcc ;;
         esac
 
     - name: Extract crate information
@@ -143,7 +141,19 @@ jobs:
         STRIP="strip"
         case ${{ matrix.job.target }} in
           arm-unknown-linux-*) STRIP="arm-linux-gnueabihf-strip" ;;
-          *) STRIP="" ;;
+          aarch64-unknown-linux-gnu) STRIP="" ;;
+          armv7-unknown-linux) STRIP="" ;;
+          mips-unknown-linux) STRIP="" ;;
+          mips64-unknown-linux) STRIP="" ;;
+          mips64el-unknown-linux) STRIP="" ;;
+          mipsel-unknown-linux) STRIP="" ;;
+          powerpc-unknown-linux) STRIP="" ;;
+          powerpc64-unknown-linux) STRIP="" ;;
+          powerpc64le-unknown-linux) STRIP="" ;;
+          riscv64gc-unknown-linux) STRIP="" ;;
+          390x-unknown-linux) STRIP="" ;;
+          x86_64-unknown-freebsd) STRIP="" ;;
+          x86_64-unknown-illumos) STRIP="" ;;
         esac;
 
         # Setup paths
