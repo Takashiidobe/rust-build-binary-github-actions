@@ -74,3 +74,10 @@ Here are the platforms that this builds for.
 | x86_64-pc-solaris              | ubuntu-20.04 | ✅          | ❓        |
 | x86_64-unknown-linux-gnux32    | ubuntu-20.04 | ✅          | ❓        |
 | x86_64-unknown-redox           | ubuntu-20.04 | ✅          | ❓        |
+
+
+## License
+
+Licensed under either of Apache License, Version 2.0 or MIT license at your option.
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
