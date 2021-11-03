@@ -141,17 +141,18 @@ jobs:
         STRIP="strip"
         case ${{ matrix.job.target }} in
           arm-unknown-linux-*) STRIP="arm-linux-gnueabihf-strip" ;;
-          aarch64-unknown-linux-gnu) STRIP="" ;;
-          armv7-unknown-linux) STRIP="" ;;
-          mips-unknown-linux) STRIP="" ;;
-          mips64-unknown-linux) STRIP="" ;;
-          mips64el-unknown-linux) STRIP="" ;;
-          mipsel-unknown-linux) STRIP="" ;;
-          powerpc-unknown-linux) STRIP="" ;;
-          powerpc64-unknown-linux) STRIP="" ;;
-          powerpc64le-unknown-linux) STRIP="" ;;
-          riscv64gc-unknown-linux) STRIP="" ;;
-          390x-unknown-linux) STRIP="" ;;
+          aarch64-pc-*) STRIP="" ;;
+          aarch64-unknown-*) STRIP="" ;;
+          armv7-unknown-*) STRIP="" ;;
+          mips-unknown-*) STRIP="" ;;
+          mips64-unknown-*) STRIP="" ;;
+          mips64el-unknown-*) STRIP="" ;;
+          mipsel-unknown-*) STRIP="" ;;
+          powerpc-unknown-*) STRIP="" ;;
+          powerpc64-unknown-*) STRIP="" ;;
+          powerpc64le-unknown-*) STRIP="" ;;
+          riscv64gc-unknown-*) STRIP="" ;;
+          s390x-unknown-*) STRIP="" ;;
           x86_64-unknown-freebsd) STRIP="" ;;
           x86_64-unknown-illumos) STRIP="" ;;
         esac;
