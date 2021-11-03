@@ -18,40 +18,40 @@ jobs:
       matrix:
         job:
           # Tier 1
-          - { target: aarch64-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
           # Need to find a way to install gcc
-          # - { target: i686-pc-windows-gnu            , os: windows-2019                  }
-          - { target: i686-pc-windows-msvc           , os: windows-2019                  }
-          - { target: i686-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-apple-darwin            , os: macos-10.15                   }
-          - { target: x86_64-pc-windows-gnu          , os: windows-2019                  }
-          - { target: x86_64-pc-windows-msvc         , os: windows-2019                  }
-          - { target: x86_64-unknown-linux-gnu       , os: ubuntu-20.04                  }
-          # Tier 2 with Host Tools
-          - { target: aarch64-apple-darwin           , os: macos-11.0                    }
-          - { target: aarch64-pc-windows-msvc        , os: windows-2019                  }
-          - { target: aarch64-unknown-linux-musl     , os: ubuntu-20.04, use-cross: true }
-          - { target: arm-unknown-linux-gnueabi      , os: ubuntu-20.04, use-cross: true }
-          - { target: arm-unknown-linux-gnueabihf    , os: ubuntu-20.04, use-cross: true }
-          - { target: armv7-unknown-linux-gnueabihf  , os: ubuntu-20.04, use-cross: true }
-          - { target: mips-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
-          - { target: mips64-unknown-linux-gnuabi64  , os: ubuntu-20.04, use-cross: true }
-          - { target: mips64el-unknown-linux-gnuabi64, os: ubuntu-20.04, use-cross: true }
-          - { target: mipsel-unknown-linux-gnu       , os: ubuntu-20.04, use-cross: true }
-          - { target: powerpc-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
-          # powerpc64 unknown linux gnu doesn't work
-          # - { target: powerpc64-unknown-linux-gnu    , os: ubuntu-20.04, use-cross: true }
-          - { target: powerpc64le-unknown-linux-gnu  , os: ubuntu-20.04, use-cross: true }
-          - { target: riscv64gc-unknown-linux-gnu	   , os: ubuntu-20.04, use-cross: true }
-          - { target: s390x-unknown-linux-gnu	       , os: ubuntu-20.04, use-cross: true }
-          # freebsd doesn't work
-          # - { target: x86_64-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
-          # illumos doesn't work.
-          # - { target: x86_64-unknown-illumos         , os: ubuntu-20.04, use-cross: true }
-          # - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
-          - { target: i686-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-linux-musl      , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-netbsd          , os: ubuntu-20.04, use-cross: true }
+          - { target: i686-pc-windows-gnu            , os: windows-2019                  }
+          # - { target: i686-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
+          # - { target: i686-pc-windows-msvc           , os: windows-2019                  }
+          # - { target: x86_64-apple-darwin            , os: macos-10.15                   }
+          # - { target: x86_64-pc-windows-gnu          , os: windows-2019                  }
+          # - { target: x86_64-pc-windows-msvc         , os: windows-2019                  }
+          # - { target: x86_64-unknown-linux-gnu       , os: ubuntu-20.04                  }
+          # # Tier 2 with Host Tools
+          # - { target: aarch64-apple-darwin           , os: macos-11.0                    }
+          # - { target: aarch64-pc-windows-msvc        , os: windows-2019                  }
+          # - { target: aarch64-unknown-linux-musl     , os: ubuntu-20.04, use-cross: true }
+          # - { target: arm-unknown-linux-gnueabi      , os: ubuntu-20.04, use-cross: true }
+          # - { target: arm-unknown-linux-gnueabihf    , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7-unknown-linux-gnueabihf  , os: ubuntu-20.04, use-cross: true }
+          # - { target: mips-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
+          # - { target: mips64-unknown-linux-gnuabi64  , os: ubuntu-20.04, use-cross: true }
+          # - { target: mips64el-unknown-linux-gnuabi64, os: ubuntu-20.04, use-cross: true }
+          # - { target: mipsel-unknown-linux-gnu       , os: ubuntu-20.04, use-cross: true }
+          # - { target: powerpc-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
+          # # powerpc64 unknown linux gnu doesn't work
+          # # - { target: powerpc64-unknown-linux-gnu    , os: ubuntu-20.04, use-cross: true }
+          # - { target: powerpc64le-unknown-linux-gnu  , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv64gc-unknown-linux-gnu	   , os: ubuntu-20.04, use-cross: true }
+          # - { target: s390x-unknown-linux-gnu	       , os: ubuntu-20.04, use-cross: true }
+          # # freebsd doesn't work
+          # # - { target: x86_64-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
+          # # illumos doesn't work.
+          # # - { target: x86_64-unknown-illumos         , os: ubuntu-20.04, use-cross: true }
+          # # - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
+          # - { target: i686-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-unknown-linux-musl      , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-unknown-netbsd          , os: ubuntu-20.04, use-cross: true }
           # Tier 2
           # - { target: aarch64-apple-ios              , os: macos-11                      }
           # - { target: aarch64-apple-ios-sim          , os: macos-11                      }
@@ -92,6 +92,7 @@ jobs:
         case ${{ matrix.job.target }} in
           arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf ;;
           aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu ;;
+          i686-pc-windows-gnu) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH
         esac
 
     - name: Extract crate information
