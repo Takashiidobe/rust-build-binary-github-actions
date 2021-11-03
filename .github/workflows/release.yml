@@ -39,38 +39,70 @@ jobs:
           # - { target: mips64el-unknown-linux-gnuabi64, os: ubuntu-20.04, use-cross: true }
           # - { target: mipsel-unknown-linux-gnu       , os: ubuntu-20.04, use-cross: true }
           # - { target: powerpc-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
-          - { target: powerpc64-unknown-linux-gnu    , os: ubuntu-20.04, use-cross: true }
+          # - { target: powerpc64-unknown-linux-gnu    , os: ubuntu-20.04, use-cross: true }
           # - { target: powerpc64le-unknown-linux-gnu  , os: ubuntu-20.04, use-cross: true }
           # - { target: riscv64gc-unknown-linux-gnu	   , os: ubuntu-20.04, use-cross: true }
           # - { target: s390x-unknown-linux-gnu	       , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
-          - { target: x86_64-unknown-illumos         , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
+          # illumos still fails, needs -lsocket, -lposix4, -lumem
+          # - { target: x86_64-unknown-illumos         , os: ubuntu-20.04, use-cross: true }
           # - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
           # - { target: i686-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
           # - { target: x86_64-unknown-linux-musl      , os: ubuntu-20.04, use-cross: true }
           # - { target: x86_64-unknown-netbsd          , os: ubuntu-20.04, use-cross: true }
           # Tier 2
-          # - { target: aarch64-apple-ios              , os: macos-11                      }
-          # - { target: aarch64-apple-ios-sim          , os: macos-11                      }
-          # - { target: aarch64-fuchsia                , os: ubuntu-20.04, use-cross: true }
-          # - { target: aarch64-linux-android          , os: ubuntu-20.04, use-cross: true }
-          # - { target: aarch64-unknown-none-softfloat , os: ubuntu-20.04, use-cross: true }
-          # - { target: aarch64-unknown-none           , os: ubuntu-20.04, use-cross: true }
-          # - { target: arm-linux-androideabi          , os: ubuntu-20.04, use-cross: true }
-          # - { target: arm-unknown-linux-musleabi     , os: ubuntu-20.04, use-cross: true }
-          # - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
-          # - { target: armebv7r-none-eabi             , os: ubuntu-20.04, use-cross: true }
-          # - { target: armebv7r-none-eabihf           , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv5te-unknown-linux-gnueabi  , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv5te-unknown-linux-musleabi , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7-linux-androideabi        , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7-unknown-linux-gnueabi    , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7-unknown-linux-musleabi   , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7-unknown-linux-musleabihf , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7a-none-eabi               , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7r-none-eabi               , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7r-none-eabihf             , os: ubuntu-20.04, use-cross: true }
-          #
+          - { target: aarch64-apple-ios              , os: macos-11                      }
+          - { target: aarch64-apple-ios-sim          , os: macos-11                      }
+          - { target: aarch64-fuchsia                , os: ubuntu-20.04, use-cross: true }
+          - { target: aarch64-linux-android          , os: ubuntu-20.04, use-cross: true }
+          - { target: aarch64-unknown-none-softfloat , os: ubuntu-20.04, use-cross: true }
+          - { target: aarch64-unknown-none           , os: ubuntu-20.04, use-cross: true }
+          - { target: arm-linux-androideabi          , os: ubuntu-20.04, use-cross: true }
+          - { target: arm-unknown-linux-musleabi     , os: ubuntu-20.04, use-cross: true }
+          - { target: arm-unknown-linux-musleabihf   , os: ubuntu-20.04, use-cross: true }
+          - { target: armebv7r-none-eabi             , os: ubuntu-20.04, use-cross: true }
+          - { target: armebv7r-none-eabihf           , os: ubuntu-20.04, use-cross: true }
+          - { target: armv5te-unknown-linux-gnueabi  , os: ubuntu-20.04, use-cross: true }
+          - { target: armv5te-unknown-linux-musleabi , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-linux-androideabi        , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-unknown-linux-gnueabi    , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-unknown-linux-musleabi   , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7-unknown-linux-musleabihf , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7a-none-eabi               , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7r-none-eabi               , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7r-none-eabihf             , os: ubuntu-20.04, use-cross: true }
+          # - { target: asmjs-unknown-emscripten       , os: ubuntu-20.04, use-cross: true }
+          # - { target: i586-pc-windows-msvc           , os: ubuntu-20.04, use-cross: true }
+          # - { target: i586-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
+          # - { target: i586-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
+          # - { target: i686-linux-android             , os: ubuntu-20.04, use-cross: true }
+          # - { target: i686-unknown-freebsd           , os: ubuntu-20.04, use-cross: true }
+          # - { target: i686-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
+          # - { target: mips-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
+          # - { target: mips64-unknown-linux-muslabi64 , os: ubuntu-20.04, use-cross: true }
+          # - { target: mips64el-unknown-linux-muslabi64, os: ubuntu-20.04, use-cross: true }
+          # - { target: mipsel-unknown-linux-musl      , os: ubuntu-20.04, use-cross: true }
+          # - { target: nvptx64-nvidia-cuda            , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv32i-unknown-none-elf      , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv32imac-unknown-none-elf   , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv32imc-unknown-none-elf    , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv64gc-unknown-none-elf     , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv64imac-unknown-none-elf   , os: ubuntu-20.04, use-cross: true }
+          # - { target: sparc64-unknown-linux-gnu      , os: ubuntu-20.04, use-cross: true }
+          # - { target: sparcv9-sun-solaris            , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv6m-none-eabi             , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7em-none-eabi            , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7em-none-eabihf          , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7m-none-eabi             , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7neon-linux-androideabi  , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7neon-unknown-linux-gnueabihf , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv8m.base-none-eabi        , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv8m.main-none-eabi        , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv8m.main-none-eabihf      , os: ubuntu-20.04, use-cross: true }
+          # - { target: wasm32-unknown-emscripten      , os: ubuntu-20.04, use-cross: true }
+          # - { target: wasm32-unknown-unknown         , os: ubuntu-20.04, use-cross: true }
+          # - { target: wasm32-wasi                    , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-apple-ios               , os: macos-10.15                   }
           # - { target: x86_64-fortanix-unknown-sgx    , os: ubuntu-20.04, use-cross: true }
           # - { target: x86_64-fuchsia                 , os: ubuntu-20.04, use-cross: true }
           # - { target: x86_64-linux-android           , os: ubuntu-20.04, use-cross: true }
@@ -78,6 +110,7 @@ jobs:
           # - { target: x86_64-unknown-linux-gnux32    , os: ubuntu-20.04, use-cross: true }
           # - { target: x86_64-unknown-redox           , os: ubuntu-20.04, use-cross: true }
           # Tier 3
+
 
     steps:
     - name: Checkout source code
@@ -89,7 +122,8 @@ jobs:
         case ${{ matrix.job.target }} in
           arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf ;;
           aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu ;;
-          i686-pc-windows-gnu) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH
+          i686-pc-windows-gnu) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
+          x86_64-unknown-illumos) ;;
         esac
 
     - name: Extract crate information
