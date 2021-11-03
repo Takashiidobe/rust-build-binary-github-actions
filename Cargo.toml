@@ -1,5 +1,5 @@
 [package]
-name = "test-bin"
+name = "rust-build-binary-github-actions"
 version = "0.1.0"
 edition = "2021"
 
