@@ -3,8 +3,3 @@ name = "test-bin"
 version = "0.1.0"
 edition = "2021"
 
-[dependencies]
-async-std = { version = "1.10.0", features = ["attributes"]}
-crossterm = "0.20.0"
-futures = "0.3.17"
-minus = { version = "4.0.2", features = ["async_std_lib", "search", "static_output"] }
