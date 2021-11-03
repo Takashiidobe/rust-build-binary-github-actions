@@ -185,7 +185,7 @@ jobs:
     - name: Install Rust toolchain
       uses: actions-rs/toolchain@v1
       with:
-        toolchain: nightly
+        toolchain: beta
         target: ${{ matrix.job.target }}
         override: true
         profile: minimal # minimal component installation (ie, no documentation)
