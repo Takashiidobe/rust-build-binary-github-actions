@@ -85,13 +85,13 @@ jobs:
           # DONE: Compiles
           #- { target: aarch64-apple-ios-sim               , os: macos-11                      }
           # TODO: needs cc
-          - { target: aarch64-fuchsia                     , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-fuchsia                     , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: aarch64-linux-android               , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: aarch64-unknown-none-softfloat      , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-unknown-none-softfloat      , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: aarch64-unknown-none                , os: ubuntu-20.04, use-cross: true }
+          # - { target: aarch64-unknown-none                , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: arm-linux-androideabi               , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
@@ -115,11 +115,11 @@ jobs:
           # DONE: Compiles
           #- { target: armv7-unknown-linux-musleabihf      , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          # - { target: armv7a-none-eabi                    , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7a-none-eabi                    , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          # - { target: armv7r-none-eabi                    , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7r-none-eabi                    , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          # - { target: armv7r-none-eabihf                  , os: ubuntu-20.04, use-cross: true }
+          - { target: armv7r-none-eabihf                  , os: ubuntu-20.04, use-cross: true }
           # TODO: needs emcc linker
           # - { target: asmjs-unknown-emscripten            , os: ubuntu-20.04, use-cross: true }
           # TODO: needs linker
@@ -131,7 +131,7 @@ jobs:
           # DONE: Compiles
           #- { target: i686-linux-android                  , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          # - { target: i686-unknown-freebsd                , os: ubuntu-20.04, use-cross: true }
+          - { target: i686-unknown-freebsd                , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: i686-unknown-linux-musl             , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
@@ -145,29 +145,29 @@ jobs:
           # DONE: Only emits Assembly
           # - { target: nvptx64-nvidia-cuda                 , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: riscv32i-unknown-none-elf           , os: ubuntu-20.04, use-cross: true }
+          - { target: riscv32i-unknown-none-elf           , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: riscv32imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
+          - { target: riscv32imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: riscv32imc-unknown-none-elf         , os: ubuntu-20.04, use-cross: true }
+          - { target: riscv32imc-unknown-none-elf         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: riscv64gc-unknown-none-elf          , os: ubuntu-20.04, use-cross: true }
+          - { target: riscv64gc-unknown-none-elf          , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: riscv64imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
+          - { target: riscv64imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           - { target: sparc64-unknown-linux-gnu           , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           - { target: sparcv9-sun-solaris                 , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: thumbv6m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
+          - { target: thumbv6m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: thumbv7em-none-eabi                 , os: ubuntu-20.04, use-cross: true }
+          - { target: thumbv7em-none-eabi                 , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: thumbv7em-none-eabihf               , os: ubuntu-20.04, use-cross: true }
+          - { target: thumbv7em-none-eabihf               , os: ubuntu-20.04, use-cross: true }
           # TODO: requires cc
-          # - { target: thumbv7m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
+          - { target: thumbv7m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: thumbv7neon-linux-androideabi       , os: ubuntu-20.04, use-cross: true }
+          - { target: thumbv7neon-linux-androideabi       , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: thumbv7neon-unknown-linux-gnueabihf , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
@@ -187,7 +187,7 @@ jobs:
           # TODO: investigate
           # - { target: x86_64-fortanix-unknown-sgx         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: x86_64-fuchsia                      , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-fuchsia                      , os: ubuntu-20.04                  }
           # DONE: Compiles
           #- { target: x86_64-linux-android                , os: ubuntu-20.04, use-cross: true }
           # TODO: missing -lsocket -lposix4 -lmem
@@ -336,7 +336,7 @@ jobs:
           # DONE: Compiles with no_std
           # - { target: x86_64-sun-solaris                  , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: x86_64-unknown-dragonfly            , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-unknown-dragonfly            , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: x86_64-unknown-haiku                , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
