@@ -99,9 +99,9 @@ jobs:
           # DONE: Compiles
           #- { target: arm-unknown-linux-musleabihf        , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: armebv7r-none-eabi                  , os: ubuntu-20.04, use-cross: true }
+          # - { target: armebv7r-none-eabi                  , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: armebv7r-none-eabihf                , os: ubuntu-20.04, use-cross: true }
+          # - { target: armebv7r-none-eabihf                , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: armv5te-unknown-linux-gnueabi       , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
@@ -111,15 +111,15 @@ jobs:
           # TODO: needs docker image for cross
           - { target: armv7-unknown-linux-gnueabi         , os: ubuntu-20.04, use-cross: true }
           # TODO: needs docker image for cross
-          - { target: armv7-unknown-linux-musleabi        , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7-unknown-linux-musleabi        , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: armv7-unknown-linux-musleabihf      , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: armv7a-none-eabi                    , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7a-none-eabi                    , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: armv7r-none-eabi                    , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7r-none-eabi                    , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: armv7r-none-eabihf                  , os: ubuntu-20.04, use-cross: true }
+          # - { target: armv7r-none-eabihf                  , os: ubuntu-20.04, use-cross: true }
           # TODO: needs emcc linker
           # - { target: asmjs-unknown-emscripten            , os: ubuntu-20.04, use-cross: true }
           # TODO: needs linker
@@ -131,43 +131,43 @@ jobs:
           # DONE: Compiles
           #- { target: i686-linux-android                  , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
-          - { target: i686-unknown-freebsd                , os: ubuntu-20.04, use-cross: true }
+          # - { target: i686-unknown-freebsd                , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: i686-unknown-linux-musl             , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: mips-unknown-linux-musl             , os: ubuntu-20.04, use-cross: true }
           # TODO: needs docker image
-          - { target: mips64-unknown-linux-muslabi64      , os: ubuntu-20.04, use-cross: true }
+          # - { target: mips64-unknown-linux-muslabi64      , os: ubuntu-20.04, use-cross: true }
           # TODO: needs docker image
-          - { target: mips64el-unknown-linux-muslabi64    , os: ubuntu-20.04, use-cross: true }
+          #  - { target: mips64el-unknown-linux-muslabi64    , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           #- { target: mipsel-unknown-linux-musl           , os: ubuntu-20.04, use-cross: true }
           # DONE: Only emits Assembly
           # - { target: nvptx64-nvidia-cuda                 , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: riscv32i-unknown-none-elf           , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv32i-unknown-none-elf           , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: riscv32imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv32imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: riscv32imc-unknown-none-elf         , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv32imc-unknown-none-elf         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: riscv64gc-unknown-none-elf          , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv64gc-unknown-none-elf          , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: riscv64imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
+          # - { target: riscv64imac-unknown-none-elf        , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           - { target: sparc64-unknown-linux-gnu           , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: sparcv9-sun-solaris                 , os: ubuntu-20.04, use-cross: true }
+          # - { target: sparcv9-sun-solaris                 , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: thumbv6m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv6m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: thumbv7em-none-eabi                 , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7em-none-eabi                 , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: thumbv7em-none-eabihf               , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7em-none-eabihf               , os: ubuntu-20.04, use-cross: true }
           # TODO: requires cc
-          - { target: thumbv7m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7m-none-eabi                  , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: thumbv7neon-linux-androideabi       , os: ubuntu-20.04, use-cross: true }
+          # - { target: thumbv7neon-linux-androideabi       , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: thumbv7neon-unknown-linux-gnueabihf , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
@@ -187,13 +187,13 @@ jobs:
           # TODO: investigate
           # - { target: x86_64-fortanix-unknown-sgx         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: x86_64-fuchsia                      , os: ubuntu-20.04                  }
+          # - { target: x86_64-fuchsia                      , os: ubuntu-20.04                  }
           # DONE: Compiles
           #- { target: x86_64-linux-android                , os: ubuntu-20.04, use-cross: true }
           # TODO: missing -lsocket -lposix4 -lmem
           # - { target: x86_64-pc-solaris                   , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: x86_64-unknown-linux-gnux32         , os: ubuntu-20.04, use-cross: true }
+          - { target: x86_64-unknown-linux-gnux32         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: x86_64-unknown-redox                , os: ubuntu-20.04, use-cross: true }
           # Tier 3
@@ -278,7 +278,7 @@ jobs:
           # TODO: investigate
           # - { target: msp430-none-elf                     , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          # - { target: powerpc-unknown-linux-gnuspe        , os: ubuntu-20.04, use-cross: true }
+          - { target: powerpc-unknown-linux-gnuspe        , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: powerpc-unknown-linux-musl          , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
@@ -336,7 +336,7 @@ jobs:
           # DONE: Compiles with no_std
           # - { target: x86_64-sun-solaris                  , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
-          - { target: x86_64-unknown-dragonfly            , os: ubuntu-20.04, use-cross: true }
+          # - { target: x86_64-unknown-dragonfly            , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: x86_64-unknown-haiku                , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
@@ -367,8 +367,14 @@ jobs:
       shell: bash
       run: |
         case ${{ matrix.job.target }} in
+          aarch64-linux-musl) sudo apt-get -y update ; sudo apt-get -y install musl-dev ;;
           arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf ;;
           aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu ;;
+          powerpc-unknown-linux-gnuspe) sudo apt-get -y update ; sudo apt-get -y install gcc-powerpc-linux-gnuspe ;;
+          sparc-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install libc6-dev-sparc-sparc64-cross libc6-sparc-sparc64-cross ;;
+          armv7-unknown-linux-gnueabi) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabi-base ;;
+          x86_64-unknown-linux-gnux32) sudo apt-get -y update ; sudo apt-get -y install gcc-x86-64-linux-gnux32 ;;
+          sparc64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-sparc64-linux-gnu-base ;;
           i686-pc-windows-gnu) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
           i686-pc-windows-msvc) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
           i586-pc-windows-msvc) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
@@ -382,10 +388,13 @@ jobs:
         echo "PROJECT_MAINTAINER=$(sed -n 's/^authors = \["\(.*\)"\]/\1/p' Cargo.toml)" >> $GITHUB_ENV
         echo "PROJECT_HOMEPAGE=$(sed -n 's/^homepage = "\(.*\)"/\1/p' Cargo.toml)" >> $GITHUB_ENV
 
-    - name: Install Rust toolchain
-      shell: bash
-      run: |
-        rustup target add ${{ matrix.job.target }}
+    - name: Install latest nightly
+      uses: actions-rs/toolchain@v1
+      with:
+        target: ${{ matrix.job.target }}
+        toolchain: nightly
+        override: true
+        profile: minimal
 
     - name: Show version information (Rust, cargo, GCC)
       shell: bash
