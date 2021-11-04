@@ -190,8 +190,8 @@ jobs:
           # - { target: x86_64-fuchsia                      , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
           - { target: x86_64-linux-android                , os: ubuntu-20.04, use-cross: true }
-          # DONE: Compiles
-          - { target: x86_64-pc-solaris                   , os: ubuntu-20.04, use-cross: true }
+          # TODO: missing -lsocket -lposix4 -lmem
+          # - { target: x86_64-pc-solaris                   , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: x86_64-unknown-linux-gnux32         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
