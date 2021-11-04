@@ -372,15 +372,6 @@ jobs:
           i686-pc-windows-gnu) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
           i686-pc-windows-msvc) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
           i586-pc-windows-msvc) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
-          x86_64-unknown-illumos) ;;
-          aarch64-unknown-none-softfloat) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-unknown-none-softfloat ;;
-          aarch64-unknown-none) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-unknown-none ;;
-          aarch64-fuchsia) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-fuchsia ;;
-          armebv7r-none-eabi) sudo apt-get -y update ; sudo apt-get -y install gcc-armebv7r-none-eabi ;;
-          armebv7r-none-eabihf) sudo apt-get -y update ; sudo apt-get -y install gcc-armebv7r-none-eabihf ;;
-          armv7a-none-eabi) sudo apt-get -y update ; sudo apt-get -y install gcc-armv7a-none-eabi ;;
-          armv7r-none-eabi) sudo apt-get -y update ; sudo apt-get -y install gcc-armv7r-none-eabi ;;
-          armv7r-none-eabihf) sudo apt-get -y update ; sudo apt-get -y install gcc-armv7r-none-eabihf ;;
         esac
 
     - name: Extract crate information
