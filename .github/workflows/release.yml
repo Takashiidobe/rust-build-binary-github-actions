@@ -333,8 +333,8 @@ jobs:
           # - { target: x86_64-apple-tvos                   , os: macos-10.15                   }
           # TODO: investigate
           # - { target: x86_64-pc-windows-msvc              , os: windows-2019                  }
-          # TODO: investigate
-          - { target: x86_64-sun-solaris                  , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles with no_std
+          # - { target: x86_64-sun-solaris                  , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           - { target: x86_64-unknown-dragonfly            , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
@@ -396,7 +396,6 @@ jobs:
       with:
         toolchain: stable
         target: ${{ matrix.job.target }}
-        override: true
         components: "rustc, cargo"
 
     - name: Show version information (Rust, cargo, GCC)
