@@ -392,11 +392,9 @@ jobs:
         echo "PROJECT_HOMEPAGE=$(sed -n 's/^homepage = "\(.*\)"/\1/p' Cargo.toml)" >> $GITHUB_ENV
 
     - name: Install Rust toolchain
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: stable
-        target: ${{ matrix.job.target }}
-        components: "rustc, cargo"
+      shell: bash
+      run: |
+        rustup target add ${{ matrix.job.target }} --toolchain stable --component rustc --component cargo
 
     - name: Show version information (Rust, cargo, GCC)
       shell: bash
