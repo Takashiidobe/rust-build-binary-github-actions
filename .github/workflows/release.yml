@@ -20,62 +20,100 @@ jobs:
       matrix:
         job:
           # Tier 1
+          # DONE: Compiles
           # - { target: aarch64-unknown-linux-gnu           , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: i686-pc-windows-gnu                 , os: windows-2019                  }
+          # DONE: Compiles
           # - { target: i686-unknown-linux-gnu              , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: i686-pc-windows-msvc                , os: windows-2019                  }
+          # DONE: Compiles
           # - { target: x86_64-apple-darwin                 , os: macos-10.15                   }
+          # DONE: Compiles
           # - { target: x86_64-pc-windows-gnu               , os: windows-2019                  }
+          # DONE: Compiles
           # - { target: x86_64-pc-windows-msvc              , os: windows-2019                  }
+          # DONE: Compiles
           # - { target: x86_64-unknown-linux-gnu            , os: ubuntu-20.04                  }
           # Tier 2 with Host Tools
+          # DONE: Compiles
           # - { target: aarch64-apple-darwin                , os: macos-11.0                    }
+          # DONE: Compiles
           # - { target: aarch64-pc-windows-msvc             , os: windows-2019                  }
+          # DONE: Compiles
           # - { target: aarch64-unknown-linux-musl          , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: arm-unknown-linux-gnueabi           , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: arm-unknown-linux-gnueabihf         , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: armv7-unknown-linux-gnueabihf       , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: mips-unknown-linux-gnu              , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: mips64-unknown-linux-gnuabi64       , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: mips64el-unknown-linux-gnuabi64     , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: mipsel-unknown-linux-gnu            , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: powerpc-unknown-linux-gnu           , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: powerpc64-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: powerpc64le-unknown-linux-gnu       , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: riscv64gc-unknown-linux-gnu	        , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: s390x-unknown-linux-gnu	            , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: x86_64-unknown-freebsd              , os: ubuntu-20.04, use-cross: true }
           # TODO: illumos fails, needs -lsocket, -lposix4, -lumem
           # - { target: x86_64-unknown-illumos              , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: arm-unknown-linux-musleabihf        , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: i686-unknown-linux-musl             , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: x86_64-unknown-linux-musl           , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: x86_64-unknown-netbsd               , os: ubuntu-20.04, use-cross: true }
           # Tier 2
+          # DONE: Compiles
           # - { target: aarch64-apple-ios                   , os: macos-11                      }
+          # DONE: Compiles
           # - { target: aarch64-apple-ios-sim               , os: macos-11                      }
           # TODO: needs cc
           # - { target: aarch64-fuchsia                     , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: aarch64-linux-android               , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
           # - { target: aarch64-unknown-none-softfloat      , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
           # - { target: aarch64-unknown-none                , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: arm-linux-androideabi               , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: arm-unknown-linux-musleabi          , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: arm-unknown-linux-musleabihf        , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
           # - { target: armebv7r-none-eabi                  , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
           # - { target: armebv7r-none-eabihf                , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: armv5te-unknown-linux-gnueabi       , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv5te-unknown-linux-musleab     i , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
+          # - { target: armv5te-unknown-linux-musleabi      , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: armv7-linux-androideabi             , os: ubuntu-20.04, use-cross: true }
           # TODO: needs docker image for cross
           # - { target: armv7-unknown-linux-gnueabi         , os: ubuntu-20.04, use-cross: true }
           # TODO: needs docker image for cross
           # - { target: armv7-unknown-linux-musleabi        , os: ubuntu-20.04, use-cross: true }
-          # - { target: armv7-unknown-linux-musleabih     f , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
+          # - { target: armv7-unknown-linux-musleabihf      , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
           # - { target: armv7a-none-eabi                    , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
@@ -86,20 +124,26 @@ jobs:
           # - { target: asmjs-unknown-emscripten            , os: ubuntu-20.04, use-cross: true }
           # TODO: needs linker
           # - { target: i586-pc-windows-msvc                , os: windows-2019                  }
+          # DONE: Compiles
           # - { target: i586-unknown-linux-gnu              , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: i586-unknown-linux-musl             , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: i686-linux-android                  , os: ubuntu-20.04, use-cross: true }
           # TODO: needs cc
           # - { target: i686-unknown-freebsd                , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: i686-unknown-linux-musl             , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: mips-unknown-linux-musl             , os: ubuntu-20.04, use-cross: true }
           # TODO: needs docker image
           # - { target: mips64-unknown-linux-muslabi64      , os: ubuntu-20.04, use-cross: true }
           # TODO: needs docker image
           # - { target: mips64el-unknown-linux-muslabi64    , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: mipsel-unknown-linux-musl           , os: ubuntu-20.04, use-cross: true }
-          # TODO: Does not support dylibs and panics
-          - { target: nvptx64-nvidia-cuda                 , os: ubuntu-20.04, use-cross: true }
+          # DONE: Only emits Assembly
+          # - { target: nvptx64-nvidia-cuda                 , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: riscv32i-unknown-none-elf           , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
@@ -138,18 +182,181 @@ jobs:
           # - { target: wasm32-unknown-unknown              , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: wasm32-wasi                         , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: x86_64-apple-ios                    , os: macos-10.15                   }
           # TODO: investigate
           # - { target: x86_64-fortanix-unknown-sgx         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: x86_64-fuchsia                      , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: x86_64-linux-android                , os: ubuntu-20.04, use-cross: true }
+          # DONE: Compiles
           # - { target: x86_64-pc-solaris                   , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: x86_64-unknown-linux-gnux32         , os: ubuntu-20.04, use-cross: true }
           # TODO: investigate
           # - { target: x86_64-unknown-redox                , os: ubuntu-20.04, use-cross: true }
           # Tier 3
+          # TODO: investigate
+          - { target: aarch64-apple-ios-macabi            , os: macos-11                      }
+          # TODO: investigate
+          - { target: aarch64-apple-tvos                  , os: macos-11                      }
+          # TODO: investigate
+          - { target: aarch64-unknown-freebsd             , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: aarch64-unknown-hermit              , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: aarch64-unknown-uefi                , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: aarch64-linux-gnu_ilp32             , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: aarch64_be-unknown-linux-gnu        , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv4t-unknown-linux-gnueabi        , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv5te-unknown-linux-uclibceabi    , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv6-unknown-freebsd               , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv6-unknown-netbsd-eabihf         , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv7-apple-ios                     , os: macos-10.15                   }
+          # TODO: investigate
+          - { target: armv7-unknown-freebsd               , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv7-unknown-netbsd-eabihf         , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv7-wrs-vxworks-eabihf            , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv7a-none-eabihf                  , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: armv7s-apple-ios                    , os: macos-10.15                   }
+          # TODO: investigate
+          - { target: avr-unknown-gnu-atmega328           , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: bpfeb-unknown-none                  , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: bpfel-unknown-none                  , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: hexagon-unknown-linux-musl          , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: i386-apple-ios                      , os: macos-10.15                   }
+          # TODO: investigate
+          - { target: i686-apple-darwin                   , os: macos-10.15                   }
+          # TODO: investigate
+          - { target: i686-pc-windows-msvc                , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: i686-unknown-haiku                  , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: i686-unknown-netbsd                 , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: i686-unknown-openbsd                , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: i686-unknown-uefi                   , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: i686-uwp-windows-gnu                , os: windows-2019                  }
+          # TODO: investigate
+          - { target: i686-uwp-windows-msvc               , os: windows-2019                  }
+          # TODO: investigate
+          - { target: i686-wrs-vxworks                    , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          - { target: mips-unknown-linux-uclibc           , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: mipsel-sony-psp                     , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: mipsel-unknown-linux-uclibc         , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: mipsel-unknown-none                 , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: mipsisa32r6-unknown-linux-gnu       , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: mipsisa32r6el-unknown-linux-gnu     , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: mipsisa64r6-unknown-linux-gnuabi64  , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: mipsisa64r6el-unknown-linux-gnuabi64, os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: msp430-none-elf                     , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc-unknown-linux-gnuspe        , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc-unknown-linux-musl          , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc-unknown-netbsd              , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc-unknown-openbsd             , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc-wrs-vxworks-spe             , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc-wrs-vxworks                 , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc64-unknown-freebsd           , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc64le-unknown-freebsd         , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc-unknown-freebsd             , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc64-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc64-wrs-vxworks               , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: powerpc64le-unknown-linux-musl      , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: riscv32gc-unknown-linux-gnu         , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: riscv32gc-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: riscv32imc-esp-espidf               , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: riscv64gc-unknown-linux-musl        , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: s390x-unknown-linux-musl            , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: sparc-unknown-linux-gnu             , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: sparc64-unknown-netbsd              , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: sparc64-unknown-openbsd             , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: thumbv4t-none-eabi                  , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: thumbv7a-pc-windows-msvc            , os: windows-2019                  }
+          # TODO: investigate
+          # - { target: thumbv7a-uwp-windows-msvc           , os: windows-2019                  }
+          # TODO: investigate
+          # - { target: thumbv7neon-unknown-linux-musleabihf, os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: wasm64-unknown-unknown              , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-apple-ios-macabi             , os: macos-10.15                   }
+          # TODO: investigate
+          # - { target: x86_64-apple-tvos                   , os: macos-10.15                   }
+          # TODO: investigate
+          # - { target: x86_64-pc-windows-msvc              , os: windows-2019                  }
+          # TODO: investigate
+          # - { target: x86_64-sun-solaris                  , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-dragonfly            , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-haiku                , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-hermit               , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-l4re-uclibc          , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-none-hermitkernel    , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-none-linuxkernel     , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-openbsd              , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-unknown-uefi                 , os: ubuntu-20.04, use-cross: true }
+          # TODO: investigate
+          # - { target: x86_64-uwp-windows-gnu              , os: windows-2019                  }
+          # TODO: investigate
+          # - { target: x86_64-uwp-windows-msvc             , os: windows-2019                  }
+          # TODO: investigate
+          # - { target: x86_64-wrs-vxworks                  , os: ubuntu-20.04, use-cross: true }
 
 
     steps:
@@ -185,7 +392,7 @@ jobs:
     - name: Install Rust toolchain
       uses: actions-rs/toolchain@v1
       with:
-        toolchain: beta
+        toolchain: stable
         target: ${{ matrix.job.target }}
         override: true
         profile: minimal # minimal component installation (ie, no documentation)
