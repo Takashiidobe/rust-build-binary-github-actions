@@ -394,6 +394,7 @@ jobs:
     - name: Install Rust toolchain
       shell: bash
       run: |
+        rustup component remove rust-std # remove rust-std since we don't need it
         rustup target add ${{ matrix.job.target }}
 
     - name: Show version information (Rust, cargo, GCC)
