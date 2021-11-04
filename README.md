@@ -6,7 +6,7 @@ Here are the platforms that this Github Action builds for.
 
 ## Tier 1
 
-| Target                    | Compiles❓ | std | Notes |
+| Target                    | Compiles?  | std | Notes |
 | ------------------------- | ---------- | --- | ----- |
 | aarch64-unknown-linux-gnu | ✅         | ✅  |       |
 | i686-pc-windows-gnu       | ✅         | ✅  |       |
@@ -19,7 +19,7 @@ Here are the platforms that this Github Action builds for.
 
 ## Tier 2 with Host Tools
 
-| Target                          | Compiles❓ | std | Notes                          |
+| Target                          | Compiles?  | std | Notes                          |
 | ------------------------------- | ---------- | --- | ------------------------------ |
 | aarch64-apple-darwin            | ✅         | ✅  |                                |
 | aarch64-pc-windows-msvc         | ✅         | ✅  |                                |
