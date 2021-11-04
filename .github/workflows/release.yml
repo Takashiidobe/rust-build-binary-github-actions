@@ -368,13 +368,13 @@ jobs:
       run: |
         case ${{ matrix.job.target }} in
           aarch64-linux-musl) sudo apt-get -y update ; sudo apt-get -y install musl-dev ;;
-          arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf ;;
-          aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu ;;
-          powerpc-unknown-linux-gnuspe) sudo apt-get -y update ; sudo apt-get -y install gcc-powerpc-linux-gnuspe ;;
+          arm-unknown-linux-*) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabihf export CC="gcc-arm-linux-gnueabihf" ;;
+          aarch64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-aarch64-linux-gnu ; export CC="gcc-aarch64-linux-gnu" ;;
+          powerpc-unknown-linux-gnuspe) sudo apt-get -y update ; sudo apt-get -y install gcc-powerpc-linux-gnuspe ; export CC="gcc-powerpc-linux-gnuspe" ;;
           sparc-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install libc6-dev-sparc-sparc64-cross libc6-sparc-sparc64-cross ;;
-          armv7-unknown-linux-gnueabi) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabi-base ;;
-          x86_64-unknown-linux-gnux32) sudo apt-get -y update ; sudo apt-get -y install gcc-x86-64-linux-gnux32 ;;
-          sparc64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-sparc64-linux-gnu-base ;;
+          armv7-unknown-linux-gnueabi) sudo apt-get -y update ; sudo apt-get -y install gcc-arm-linux-gnueabi ; export CC="gcc-arm-linux-gnueabi" ;;
+          x86_64-unknown-linux-gnux32) sudo apt-get -y update ; sudo apt-get -y install gcc-x86-64-linux-gnux32 ; export CC="gcc-x86-64-linux-gnux32" ;;
+          sparc64-unknown-linux-gnu) sudo apt-get -y update ; sudo apt-get -y install gcc-sparc64-linux-gnu ; export CC="gcc-sparc64-linux-gnu" ;;
           i686-pc-windows-gnu) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
           i686-pc-windows-msvc) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
           i586-pc-windows-msvc) echo "C:\msys64\mingw32\bin" >> $GITHUB_PATH ;;
