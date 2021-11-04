@@ -399,7 +399,7 @@ jobs:
     - name: Show version information (Rust, cargo, Gcc)
       shell: bash
       run: |
-        cc --version || true
+        cc --verbose || true
         rustup -V
         rustup toolchain list
         rustup default
