@@ -394,7 +394,7 @@ jobs:
     - name: Install Rust toolchain
       shell: bash
       run: |
-        rustup target add ${{ matrix.job.target }} --profile minimal
+        rustup target add ${{ matrix.job.target }}
 
     - name: Show version information (Rust, cargo, GCC)
       shell: bash
