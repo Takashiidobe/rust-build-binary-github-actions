@@ -12,3 +12,6 @@ image = "rustembedded/cross:armv7-unknown-linux-gnueabi"
 
 [target.armv7-unknown-linux-musleabi]
 image = "rustembedded/cross:armv7-unknown-linux-musleabi"
+
+[target.x86_64-sun-solaris]
+image = "rustembedded/cross:x86_64-sun-solaris"
