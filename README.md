@@ -2,7 +2,7 @@
 
 Using Github Actions to Build a binary for as many platforms as possible.
 
-Here are the platforms that this Github Action builds for.
+Here are the platforms that this Github Action builds for: ~44.
 
 ## Tier 1
 
@@ -45,7 +45,7 @@ Here are the platforms that this Github Action builds for.
 
 ## Tier 2
 
-| Target                              | Compiles❓ | std | Notes           |
+| Target                              | Compiles?  | std | Notes           |
 | ----------------------------------- | ---------- | --- | --------------- |
 | aarch64-apple-ios                   | ✅         | ✅  |                 |
 | aarch64-apple-ios-sim               | ✅         | ✅  |                 |
