@@ -123,7 +123,7 @@ jobs:
           # TODO: needs emcc linker
           # - { target: asmjs-unknown-emscripten            , os: ubuntu-20.04, use-cross: true }
           # TODO: needs linker
-          - { target: i586-pc-windows-msvc                , os: windows-2019                  }
+          # - { target: i586-pc-windows-msvc                , os: windows-2019                  }
           # DONE: Compiles
           # - { target: i586-unknown-linux-gnu              , os: ubuntu-20.04, use-cross: true }
           # DONE: Compiles
