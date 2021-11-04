@@ -6,112 +6,112 @@ Here are the platforms that this Github Action builds for: ~44.
 
 ## Tier 1
 
-| Target                    | Compiles?  | std | Notes |
-| ------------------------- | ---------- | --- | ----- |
-| aarch64-unknown-linux-gnu | ✅         | ✅  |       |
-| i686-pc-windows-gnu       | ✅         | ✅  |       |
-| i686-unknown-linux-gnu    | ✅         | ✅  |       |
-| i686-pc-windows-msvc      | ✅         | ✅  |       |
-| x86_64-apple-darwin       | ✅         | ✅  |       |
-| x86_64-pc-windows-gnu     | ✅         | ✅  |       |
-| x86_64-pc-windows-msvc    | ✅         | ✅  |       |
-| x86_64-unknown-linux-gnu  | ✅         | ✅  |       |
+| Target                    | Compiles? | std | Notes |
+| ------------------------- | --------- | --- | ----- |
+| aarch64-unknown-linux-gnu | ✅        | ✅  |       |
+| i686-pc-windows-gnu       | ✅        | ✅  |       |
+| i686-unknown-linux-gnu    | ✅        | ✅  |       |
+| i686-pc-windows-msvc      | ✅        | ✅  |       |
+| x86_64-apple-darwin       | ✅        | ✅  |       |
+| x86_64-pc-windows-gnu     | ✅        | ✅  |       |
+| x86_64-pc-windows-msvc    | ✅        | ✅  |       |
+| x86_64-unknown-linux-gnu  | ✅        | ✅  |       |
 
 ## Tier 2 with Host Tools
 
-| Target                          | Compiles?  | std | Notes                          |
-| ------------------------------- | ---------- | --- | ------------------------------ |
-| aarch64-apple-darwin            | ✅         | ✅  |                                |
-| aarch64-pc-windows-msvc         | ✅         | ✅  |                                |
-| aarch64-unknown-linux-musl      | ✅         | ✅  |                                |
-| arm-unknown-linux-gnueabi       | ✅         | ✅  |                                |
-| arm-unknown-linux-gnueabihf     | ✅         | ✅  |                                |
-| armv7-unknown-linux-gnueabihf   | ✅         | ✅  |                                |
-| mips-unknown-linux-gnu          | ✅         | ✅  |                                |
-| mips64-unknown-linux-gnuabi64   | ✅         | ✅  |                                |
-| mips64el-unknown-linux-gnuabi64 | ✅         | ✅  |                                |
-| mipsel-unknown-linux-gnuabi     | ✅         | ✅  |                                |
-| powerpc-unknown-linux-gnu       | ✅         | ✅  |                                |
-| powerpc64-unknown-linux-gnu     | ✅         | ✅  |                                |
-| powerpc64le-unknown-linux-gnu   | ✅         | ✅  |                                |
-| riscv64gc-unknown-linux-gnu     | ✅         | ✅  |                                |
-| s390x-unknown-linux-gnu         | ✅         | ✅  |                                |
-| x86_64-unknown-freebsd          | ✅         | ✅  |                                |
-| x86_64-unknown-illumos          | ❌         | ✅  | Needs Illumos libraries linked |
-| arm-unknown-linux-musleabihf    | ✅         | ✅  |                                |
-| i686-unknown-linux-musl         | ✅         | ✅  |                                |
-| x86_64-unknown-linux-musl       | ✅         | ✅  |                                |
-| x86_64-unknown-netbsd           | ✅         | ✅  |                                |
+| Target                          | Compiles? | std | Notes |
+| ------------------------------- | --------- | --- | ----- |
+| aarch64-apple-darwin            | ✅        | ✅  |       |
+| aarch64-pc-windows-msvc         | ✅        | ✅  |       |
+| aarch64-unknown-linux-musl      | ✅        | ✅  |       |
+| arm-unknown-linux-gnueabi       | ✅        | ✅  |       |
+| arm-unknown-linux-gnueabihf     | ✅        | ✅  |       |
+| armv7-unknown-linux-gnueabihf   | ✅        | ✅  |       |
+| mips-unknown-linux-gnu          | ✅        | ✅  |       |
+| mips64-unknown-linux-gnuabi64   | ✅        | ✅  |       |
+| mips64el-unknown-linux-gnuabi64 | ✅        | ✅  |       |
+| mipsel-unknown-linux-gnuabi     | ✅        | ✅  |       |
+| powerpc-unknown-linux-gnu       | ✅        | ✅  |       |
+| powerpc64-unknown-linux-gnu     | ✅        | ✅  |       |
+| powerpc64le-unknown-linux-gnu   | ✅        | ✅  |       |
+| riscv64gc-unknown-linux-gnu     | ✅        | ✅  |       |
+| s390x-unknown-linux-gnu         | ✅        | ✅  |       |
+| x86_64-unknown-freebsd          | ✅        | ✅  |       |
+| x86_64-unknown-illumos          | ✅        | ✅  |       |
+| arm-unknown-linux-musleabihf    | ✅        | ✅  |       |
+| i686-unknown-linux-musl         | ✅        | ✅  |       |
+| x86_64-unknown-linux-musl       | ✅        | ✅  |       |
+| x86_64-unknown-netbsd           | ✅        | ✅  |       |
 
 ## Tier 2
 
-| Target                              | Compiles?  | std | Notes           |
-| ----------------------------------- | ---------- | --- | --------------- |
-| aarch64-apple-ios                   | ✅         | ✅  |                 |
-| aarch64-apple-ios-sim               | ✅         | ✅  |                 |
-| aarch64-fuchsia                     | ❓         | ✅  |                 |
-| aarch64-linux-android               | ❓         | ✅  |                 |
-| aarch64-unknown-none-softfloat      | ❓         | ❌  |                 |
-| aarch64-unknown-none                | ❓         | ❌  |                 |
-| arm-linux-androideabi               | ❓         | ✅  |                 |
-| arm-unknown-linux-musleabi          | ✅         | ✅  |                 |
-| arm-unknown-linux-musleabihf        | ✅         | ✅  |                 |
-| armebv7r-none-eabi                  | ❓         | ❌  |                 |
-| armebv7r-none-eabihf                | ❓         | ❌  |                 |
-| armv5te-unknown-linux-gnueabi       | ❓         | ✅  |                 |
-| armv5te-unknown-linux-musleabi      | ❓         | ✅  |                 |
-| armv7-linux-androideabi             | ❓         | ✅  |                 |
-| armv7-unknown-linux-gnueabi         | ❓         | ✅  |                 |
-| armv7-unknown-linux-musleabi        | ❓         | ✅  |                 |
-| armv7-unknown-linux-musleabihf      | ❓         | ✅  |                 |
-| armv7a-none-eabi                    | ❓         | ❌  |                 |
-| armv7r-none-eabi                    | ❓         | ❌  |                 |
-| armv7r-none-eabihf                  | ❓         | ❌  |                 |
-| armv5te-unknown-linux-gnueabi       | ❓         | ✅  |                 |
-| armv5te-unknown-linux-musleabi      | ❓         | ✅  |                 |
-| armv7-linux-androideabi             | ❓         | ✅  |                 |
-| armv7-unknown-linux-gnueabi         | ❓         | ✅  |                 |
-| armv7-unknown-linux-musleabi        | ❓         | ✅  |                 |
-| armv7-unknown-linux-musleabihf      | ✅         | ✅  |                 |
-| armv7a-none-eabi                    | ❓         | ✅  |                 |
-| armv7a-none-eabihf                  | ❓         | ✅  |                 |
-| asmjs-unknown-emscripten            | ❓         | ✅  |                 |
-| i586-pc-windows-msvc                | ❓         | ✅  |                 |
-| i586-unknown-linux-gnu              | ❓         | ✅  |                 |
-| i586-unknown-linux-musl             | ❓         | ✅  |                 |
-| i686-linux-android                  | ❓         | ✅  |                 |
-| i686-unknown-freebsd                | ❓         | ✅  |                 |
-| i686-unknown-linux-musl             | ❓         | ✅  |                 |
-| mips-unknown-linux-musl             | ❓         | ✅  |                 |
-| mips64-unknown-linux-muslabi64      | ❓         | ✅  |                 |
-| mips64el-unknown-linux-muslabi64    | ❓         | ✅  |                 |
-| nvptx64-nvidia-cuda                 | ❓         | ❌  | --emit=asm only |
-| riscv32i-unknown-none-elf           | ❓         | ❌  |                 |
-| riscv32imac-unknown-none-elf        | ❓         | ❌  |                 |
-| riscv32imc-unknown-none-elf         | ❓         | ❌  |                 |
-| riscv64gc-unknown-none-elf          | ❓         | ❌  |                 |
-| riscv64imac-unknown-none-elf        | ❓         | ❌  |                 |
-| sparc64-unknown-linux-gnu           | ❓         | ✅  |                 |
-| sparcv9-sun-solaris                 | ❓         | ✅  |                 |
-| thumbv6m-none-eabi                  | ❓         | ❌  |                 |
-| thumbv7em-none-eabi                 | ❓         | ❌  |                 |
-| thumbv7em-none-eabihf               | ❓         | ❌  |                 |
-| thumbv7m-none-eabi                  | ❓         | ❌  |                 |
-| thumbv7neon-linux-androideabi       | ❓         | ✅  |                 |
-| thumbv7neon-unknown-linux-gnueabihf | ❓         | ✅  |                 |
-| thumbv8m.base-none-eabi             | ❓         | ❌  |                 |
-| thumbv8m.main-none-eabi             | ❓         | ❌  |                 |
-| thumbv8m.main-none-eabihf           | ❓         | ❌  |                 |
-| wasm32-unknown-emscripten           | ❓         | ✅  |                 |
-| wasm32-unknown-unknown              | ❓         | ✅  |                 |
-| wasm32-wasi                         | ❓         | ✅  |                 |
-| x86_64-apple-ios                    | ❓         | ✅  |                 |
-| x86_64-fortanix-unknown-sgx         | ❓         | ✅  |                 |
-| x86_64-fuchsia                      | ❓         | ✅  |                 |
-| x86_64-linux-android                | ❓         | ✅  |                 |
-| x86_64-pc-solaris                   | ❓         | ✅  |                 |
-| x86_64-unknown-linux-gnux32         | ❓         | ✅  |                 |
-| x86_64-unknown-redox                | ❓         | ✅  |                 |
+| Target                              | Compiles? | std | Notes           |
+| ----------------------------------- | --------- | --- | --------------- |
+| aarch64-apple-ios                   | ✅        | ✅  |                 |
+| aarch64-apple-ios-sim               | ✅        | ✅  |                 |
+| aarch64-fuchsia                     | ❓        | ✅  |                 |
+| aarch64-linux-android               | ❓        | ✅  |                 |
+| aarch64-unknown-none-softfloat      | ❓        | ❌  |                 |
+| aarch64-unknown-none                | ❓        | ❌  |                 |
+| arm-linux-androideabi               | ❓        | ✅  |                 |
+| arm-unknown-linux-musleabi          | ✅        | ✅  |                 |
+| arm-unknown-linux-musleabihf        | ✅        | ✅  |                 |
+| armebv7r-none-eabi                  | ❓        | ❌  |                 |
+| armebv7r-none-eabihf                | ❓        | ❌  |                 |
+| armv5te-unknown-linux-gnueabi       | ❓        | ✅  |                 |
+| armv5te-unknown-linux-musleabi      | ❓        | ✅  |                 |
+| armv7-linux-androideabi             | ❓        | ✅  |                 |
+| armv7-unknown-linux-gnueabi         | ❓        | ✅  |                 |
+| armv7-unknown-linux-musleabi        | ❓        | ✅  |                 |
+| armv7-unknown-linux-musleabihf      | ❓        | ✅  |                 |
+| armv7a-none-eabi                    | ❓        | ❌  |                 |
+| armv7r-none-eabi                    | ❓        | ❌  |                 |
+| armv7r-none-eabihf                  | ❓        | ❌  |                 |
+| armv5te-unknown-linux-gnueabi       | ❓        | ✅  |                 |
+| armv5te-unknown-linux-musleabi      | ❓        | ✅  |                 |
+| armv7-linux-androideabi             | ❓        | ✅  |                 |
+| armv7-unknown-linux-gnueabi         | ❓        | ✅  |                 |
+| armv7-unknown-linux-musleabi        | ❓        | ✅  |                 |
+| armv7-unknown-linux-musleabihf      | ✅        | ✅  |                 |
+| armv7a-none-eabi                    | ❓        | ✅  |                 |
+| armv7a-none-eabihf                  | ❓        | ✅  |                 |
+| asmjs-unknown-emscripten            | ❓        | ✅  |                 |
+| i586-pc-windows-msvc                | ❓        | ✅  |                 |
+| i586-unknown-linux-gnu              | ❓        | ✅  |                 |
+| i586-unknown-linux-musl             | ❓        | ✅  |                 |
+| i686-linux-android                  | ❓        | ✅  |                 |
+| i686-unknown-freebsd                | ❓        | ✅  |                 |
+| i686-unknown-linux-musl             | ❓        | ✅  |                 |
+| mips-unknown-linux-musl             | ❓        | ✅  |                 |
+| mips64-unknown-linux-muslabi64      | ❓        | ✅  |                 |
+| mips64el-unknown-linux-muslabi64    | ❓        | ✅  |                 |
+| nvptx64-nvidia-cuda                 | ❓        | ❌  | --emit=asm only |
+| riscv32i-unknown-none-elf           | ❓        | ❌  |                 |
+| riscv32imac-unknown-none-elf        | ❓        | ❌  |                 |
+| riscv32imc-unknown-none-elf         | ❓        | ❌  |                 |
+| riscv64gc-unknown-none-elf          | ❓        | ❌  |                 |
+| riscv64imac-unknown-none-elf        | ❓        | ❌  |                 |
+| sparc64-unknown-linux-gnu           | ❓        | ✅  |                 |
+| sparcv9-sun-solaris                 | ❓        | ✅  |                 |
+| thumbv6m-none-eabi                  | ❓        | ❌  |                 |
+| thumbv7em-none-eabi                 | ❓        | ❌  |                 |
+| thumbv7em-none-eabihf               | ❓        | ❌  |                 |
+| thumbv7m-none-eabi                  | ❓        | ❌  |                 |
+| thumbv7neon-linux-androideabi       | ❓        | ✅  |                 |
+| thumbv7neon-unknown-linux-gnueabihf | ❓        | ✅  |                 |
+| thumbv8m.base-none-eabi             | ❓        | ❌  |                 |
+| thumbv8m.main-none-eabi             | ❓        | ❌  |                 |
+| thumbv8m.main-none-eabihf           | ❓        | ❌  |                 |
+| wasm32-unknown-emscripten           | ❓        | ✅  |                 |
+| wasm32-unknown-unknown              | ❓        | ✅  |                 |
+| wasm32-wasi                         | ❓        | ✅  |                 |
+| x86_64-apple-ios                    | ❓        | ✅  |                 |
+| x86_64-fortanix-unknown-sgx         | ❓        | ✅  |                 |
+| x86_64-fuchsia                      | ❓        | ✅  |                 |
+| x86_64-linux-android                | ❓        | ✅  |                 |
+| x86_64-pc-solaris                   | ❓        | ✅  |                 |
+| x86_64-unknown-linux-gnux32         | ❓        | ✅  |                 |
+| x86_64-unknown-redox                | ❓        | ✅  |                 |
 
 ## Tier 3
 
